@@ -12,7 +12,6 @@
  * @version 1.0
  */
 
-
 /**
  * Se houver um get json retorna seu valor, senão define $json como false
  * 
