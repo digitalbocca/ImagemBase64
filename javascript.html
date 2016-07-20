@@ -59,14 +59,37 @@ https://highlightjs.org/
             </div>
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3">
-                    <h3>Como usar em HTML:</h3>
-                    <p>No src da tag img passe o endereço do seu arquivo PHP que gera a imagem.</p>
+                    <h3>Como usar em JAVASCRIPT:</h3>
+                    <p>Este exemplo usa Jquery.</p>
+                    <p>Faça um ajax para o arquivo php que retorna o JSON.</p>
+                    <p>Pegue o retorno em base64 e use como uma imagem.</p>
                     <p>&nbsp;</p>
-                    <h3>Código:</h3>
-                    <pre><code class="html text-left">&lt;img src=&quot;logo.php&quot;&gt;</code></pre>
+                    <h3>Código - HTML:</h3>
+                    <pre><code class="html text-left">&lt;div id=&quot;imagem&quot;&gt;&lt;/div&gt;</code></pre>
+                    <p>&nbsp;</p>
+                    <h3>Código - JQUERY:</h3>
+                    <pre><code class="javascript text-left">
+//INICIO DO CODIGO JQUERY
+$(document).ready(function(){
+    //GET PASSANDO O PARAMETRO JSON:TRUE
+    $.get("logo.php",{json: "true"})
+    //QUANDO RECEBER A RESPOSTA
+    .done(function(resposta){
+        //CRIA UM OBJETO IMAGEM
+        var imagem = new Image();
+        //COLOCA O JSON RECEBIDO NO SRC DO OBJETO
+        imagem.src = 'data:image/png;base64,'+resposta.imagem;
+        //INSERE A IMAGEM NA DIV
+        $('#imagem').append(imagem);
+        //APROVEITE PARA ADICIONAR AS CLASSES CSS SE PRECISAR
+        $('#imagem > img').addClass('img-responsive center-block');
+        //NÃO ESQUEÇA DE DEFINIR UM ALT PARA SUA IMAGEM
+        $('#imagem > img').attr("alt","Logo EDB 2016");
+    });
+});</code></pre>
                     <p>&nbsp;</p>
                     <h3>Resultado:</h3>
-                    <p><img src="logo.php" alt="Resultado do Código"></p>
+                    <p id="imagem"></p>
                     <p>&nbsp;</p>
                     <p><a class="btn btn-primary btn-block" href="index.html">VOLTAR</a></p>
                 </div>
@@ -74,5 +97,25 @@ https://highlightjs.org/
         </div>
         <!--Jquery-->
         <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script type="text/javascript">
+            //INICIO DO CODIGO JQUERY
+            $(document).ready(function(){
+                //GET PASSANDO O PARAMETRO JSON:TRUE
+                $.get("logo.php",{json: "true"})
+                //QUANDO RECEBER A RESPOSTA
+                .done(function(resposta){
+                    //CRIA UM OBJETO IMAGEM
+                    var imagem = new Image();
+                    //COLOCA O JSON RECEBIDO NO SRC DO OBJETO
+                    imagem.src = 'data:image/png;base64,'+resposta.imagem;
+                    //INSERE A IMAGEM NA DIV
+                    $('#imagem').append(imagem);
+                    //APROVEITE PARA ADICIONAR AS CLASSES CSS SE PRECISAR
+                    $('#imagem > img').addClass('img-responsive center-block');
+                    //NÃO ESQUEÇA DE DEFINIR UM ALT PARA SUA IMAGEM
+                    $('#imagem > img').attr("alt","Logo EDB 2016");
+                });
+            });
+        </script>
     </body>
 </html>
