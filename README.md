@@ -1,7 +1,8 @@
 # ImagemBase64
+
 Entrega uma imagem em base64.
 
-Recebendo um parametro json true no GET ele retorna um JSON, senão retorna a imagem.
+Recebendo um par&acirc;metro &quot;json true&quot; no GET ele retorna um JSON, sen&atilde;o retorna a imagem.
 
 #### Exemplo
 
