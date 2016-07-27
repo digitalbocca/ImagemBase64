@@ -14,23 +14,23 @@ Entre diretamente no arquivo para ver a imagem.
 
 `pasta/do/arquivo/logo.php`
 
-Ex:
+**Ex:**
 
 http://estudiodigitalbocca.com.br/labs/ImagemBase64/logo.php
 
-Ou faça um GET para receber o json.
+Ou fa&ccedil;a um GET para receber o json.
 
 `pasta/do/arquivo/logo.php?json=true`
 
-Ex:
+**Ex:**
 
 http://estudiodigitalbocca.com.br/labs/ImagemBase64/logo.php?json=true
 
-Simule um erro de parametro incorreto.
+Simule um erro de par&acirc;metro incorreto.
 
 `pasta/do/arquivo/logo.php?json=batatinha`
 
-Ex:
+**Ex:**
 
 http://estudiodigitalbocca.com.br/labs/ImagemBase64/logo.php?json=batatinha
 
@@ -40,11 +40,11 @@ Use diretamente no HTML.
 <img src='pasta/do/arquivo/logo.php'>
 ```
 
-Ex:
+**Ex:**
 
 http://estudiodigitalbocca.com.br/labs/ImagemBase64/htmlpuro.html
 
-Exemplo usando JS (Usei Jquery para fazer mais rápido, mas use como quiser):
+Exemplo usando JS (Usei Jquery para fazer mais r&aacute;pido, mas use como quiser):
 
 Criei uma div com o id imagem no html:
 
@@ -52,7 +52,7 @@ Criei uma div com o id imagem no html:
 <div id="imagem"></div>
 ```
 
-Adicionei esse código Jquery
+Adicionei esse c&oacute;digo Jquery
 
 ```javascript
 //INICIO DO CODIGO JQUERY
@@ -75,11 +75,14 @@ $(document).ready(function(){
 });
 ```
 
-Ex:
+**Ex:**
 
 http://estudiodigitalbocca.com.br/labs/ImagemBase64/javascript.html
 
-> Este código é apenas para fins didáticos e não deve ser usado em produção.
-> O código php não segue nenhum padrão, é apenas para simular o funcionamento.
-> O objetivo é sugerir formas de usar base64 para imagens na prática.
+> Este c&oacute;digo &eacute; apenas para fins did&aacute;ticos e n&atilde;o deve ser usado em produ&ccedil;&atilde;o.
+
+> O c&oacute;digo php n&atilde;o segue nenhum padr&atilde;o, &eacute; apenas para simular o funcionamento.
+
+> O objetivo &eacute; sugerir formas de usar base64 para imagens na pr&aacute;tica.
+
 > Obrigado.
