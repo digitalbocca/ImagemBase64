@@ -68,9 +68,9 @@ $(document).ready(function(){
         //INSERE A IMAGEM NA DIV
         $('#imagem').append(imagem);
         //APROVEITE PARA ADICIONAR AS CLASSES CSS SE PRECISAR
-        $('#imagem > img').addClass('img-responsive center-block');
+        $('#imagem > img').addClass('img-fluid');
         //NÃO ESQUEÇA DE DEFINIR UM ALT PARA SUA IMAGEM
-        $('#imagem > img').attr("alt","Logo EDB 2016");
+        $('#imagem > img').attr("alt","Logo EDB 2017");
     });
 });
 ```
