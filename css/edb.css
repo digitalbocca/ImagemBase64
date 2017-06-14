@@ -5,17 +5,6 @@
  * GitHub Corners por: http://tholman.com/github-corners/
  */
 
-@font-face {
-    font-family: 'edb';
-    src: url('../fonts/edb.eot');
-    src: url('../fonts/edb.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/edb.woff') format('woff'),
-         url('../fonts/edb.ttf') format('truetype'),
-         url('../fonts/edb.svg#edb') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
 html,body{
   height: 100%;
   min-height: 100%;
@@ -40,7 +29,7 @@ html,body{
 }
 
 .edb-texto{
-  font-family: edb;
+  font-family: 'Denk One', sans-serif;
 }
 
 .edb-branco{
@@ -57,6 +46,10 @@ html,body{
 
 .edb-sombra{
   text-shadow: 1px 1px 3px black;
+}
+
+.highlight{
+  font-size: 1.2rem !important;
 }
 
 /*Código do GitHub Corners*/

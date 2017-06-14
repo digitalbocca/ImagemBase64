@@ -1,50 +1,62 @@
-# ImagemBase64
+# ImagemBase64 #
 
 Entrega uma imagem em base64.
+Recebendo um parâmetro "json=true" no GET ele retorna um JSON, senão retorna a imagem.
 
-Recebendo um par&acirc;metro &quot;json true&quot; no GET ele retorna um JSON, sen&atilde;o retorna a imagem.
+[![forthebadge](http://forthebadge.com/images/badges/contains-cat-gifs.svg)](http://forthebadge.com)
+[![forthebadge](http://forthebadge.com/images/badges/uses-badges.svg)](http://forthebadge.com)
+[![forthebadge](http://forthebadge.com/images/badges/contains-technical-debt.svg)](http://forthebadge.com)
+[![forthebadge](http://forthebadge.com/images/badges/built-by-developers.svg)](http://forthebadge.com)
 
-#### Exemplo
+---
+
+## Exemplo ##
 
 http://estudiodigitalbocca.com.br/labs/ImagemBase64/
 
-#### Como Usar
+---
+
+## Usando em PHP ##
 
 Entre diretamente no arquivo para ver a imagem.
 
-`pasta/do/arquivo/logo.php`
+`http://localhost/logo.php`
 
 **Ex:**
+https://estudiodigitalbocca.com.br/labs/ImagemBase64/logo.php
 
-http://estudiodigitalbocca.com.br/labs/ImagemBase64/logo.php
+Ou faça um GET para receber o json.
 
-Ou fa&ccedil;a um GET para receber o json.
-
-`pasta/do/arquivo/logo.php?json=true`
-
-**Ex:**
-
-http://estudiodigitalbocca.com.br/labs/ImagemBase64/logo.php?json=true
-
-Simule um erro de par&acirc;metro incorreto.
-
-`pasta/do/arquivo/logo.php?json=batatinha`
+`http://localhost/logo.php?json=true`
 
 **Ex:**
+https://estudiodigitalbocca.com.br/labs/ImagemBase64/logo.php?json=true
 
-http://estudiodigitalbocca.com.br/labs/ImagemBase64/logo.php?json=batatinha
+Simule um erro de parâmetro incorreto.
+
+`http://localhost/logo.php?json=batatinha`
+
+**Ex:**
+https://estudiodigitalbocca.com.br/labs/ImagemBase64/logo.php?json=batatinha
+
+---
+
+## HTML e PHP ##
 
 Use diretamente no HTML.
 
 ```html
-<img src='pasta/do/arquivo/logo.php'>
+<img src='caminho/do/arquivo/logo.php'>
 ```
 
 **Ex:**
+https://estudiodigitalbocca.com.br/labs/ImagemBase64/htmlpuro.html
 
-http://estudiodigitalbocca.com.br/labs/ImagemBase64/htmlpuro.html
+---
 
-Exemplo usando JS (Usei Jquery para fazer mais r&aacute;pido, mas use como quiser):
+## HTML e Javascript ##
+
+Exemplo usando JS (Usei Jquery para fazer mais rápido, mas use como quiser):
 
 Criei uma div com o id imagem no html:
 
@@ -52,7 +64,7 @@ Criei uma div com o id imagem no html:
 <div id="imagem"></div>
 ```
 
-Adicionei esse c&oacute;digo Jquery
+Adicionei esse código Jquery
 
 ```javascript
 //INICIO DO CODIGO JQUERY
@@ -76,13 +88,14 @@ $(document).ready(function(){
 ```
 
 **Ex:**
+https://estudiodigitalbocca.com.br/labs/ImagemBase64/javascript.html
 
-http://estudiodigitalbocca.com.br/labs/ImagemBase64/javascript.html
+---
 
-> Este c&oacute;digo &eacute; apenas para fins did&aacute;ticos e n&atilde;o deve ser usado em produ&ccedil;&atilde;o.
+> Este código tem somente finalidade didática e não deve ser usado em produção.
 
-> O c&oacute;digo php n&atilde;o segue nenhum padr&atilde;o, &eacute; apenas para simular o funcionamento.
+> O código php não segue nenhum padrão, servindo apenas para simular o funcionamento.
 
-> O objetivo &eacute; sugerir formas de usar base64 para imagens na pr&aacute;tica.
+> O objetivo é sugerir formas de usar base64 para imagens na prática.
 
 > Obrigado.

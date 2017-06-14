@@ -5,17 +5,17 @@
  * 
  * Retorna o logotipo em base64 para uma chamada GET em JSON ou Imprime a Imagem
  * 
- * Versão do PHP: 7.0 
+ * Versão do PHP: 7.0+
  * 
  * @author Gabriel Bertola Bocca <gabriel at estudiodigitalbocca.com.br>
- * @copyright (c) 2016, Estúdio Digital Bocca
- * @version 1.0
+ * @copyright (c) 2016-2017, Estúdio Digital Bocca
+ * @version 1.0.0
  */
 
 /**
  * Se houver um get json retorna seu valor, senão define $json como false
  * 
- * ATENÇÃO: Precisa da versão 7 do PHP, caso esteja usando outra versão troque 
+ * ATENÇÃO: Precisa da versão 7+ do PHP, caso esteja usando outra versão troque 
  * por um IF/ELSE ou qualquer estrutura similar
  * 
  * Referência para Null coalescing:

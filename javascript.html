@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 
 <!--
+
 Para este exemplo estou usando:
 
-Jquery 3.1.1
-    "https://code.jquery.com/jquery-3.1.1.min.js"
-    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+Jquery 3.2.1
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"
 
 Bootstrap 4.0.0-alpha.6 (Apenas o CSS Minificado)
     href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
     integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
     crossorigin="anonymous"
-
-prism.js
-    https://prismjs.com/
 
 Paletas de Gradiente:
     http://uigradients.com
@@ -25,92 +23,76 @@ GitHub Corners:
 -->
 
 <html lang="pt-br">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>ImagemBase64</title>
-        <!-- Bootstrap -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/edb.css">
-        <link rel="stylesheet" href="css/prism.css">
-    </head>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ImagemBase64</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- Fonte Denk One - Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Denk+One" rel="stylesheet">
+    <link rel="stylesheet" href="css/edb.css">
+    <link rel="stylesheet" href="css/prism.css">
+  </head>
+  <body>
     <div class="container-fluid">
-            <a href="https://github.com/digitalbocca/ImagemBase64" class="github-corner">
-              <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#fff; color:#136a8a; position: absolute; top: 0; border: 0; right: 0;">
-                <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-                <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
-                <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
-              </svg>
-            </a>
-            <div class="row edb-gradient-azul edb-texto edb-branco edb-sombra py-5">
-                <div class="col">
-                    <h1 class="display-1 text-center">ImagemBase64</h1>
-                </div>
-            </div>
-            <div class="row justify-content-center pt-3 pb-5">
-                <div class="col col-md-6 text-center">
-                    <h3 class="py-4">Como usar em JAVASCRIPT:</h3>
-                    <p>Este exemplo usa Jquery.</p>
-                    <p>Faça um ajax para o arquivo php que retorna o JSON.</p>
-                    <p>Pegue o retorno em base64 e use como uma imagem.</p>
-                    <h3 class="py-4">Código - HTML:</h3>
-                    <pre><code class="language-html">&lt;div id=&quot;imagem&quot;&gt;&lt;/div&gt;</code></pre>
-                    <h3 class="py-4">Código - JQUERY:</h3>
-                    <pre><code class="language-javascript">//INICIO DO CODIGO JQUERY
-$(document).ready(function(){
-    //GET PASSANDO O PARAMETRO JSON:TRUE
-    $.get("logo.php",{json: "true"})
-    //QUANDO RECEBER A RESPOSTA
-    .done(function(resposta){
-        //CRIA UM OBJETO IMAGEM
-        var imagem = new Image();
-        //COLOCA O JSON RECEBIDO NO SRC DO OBJETO
-        imagem.src = 'data:image/png;base64,'+resposta.imagem;
-        //INSERE A IMAGEM NA DIV
-        $('#imagem').append(imagem);
-        //APROVEITE PARA ADICIONAR AS CLASSES CSS SE PRECISAR
-        $('#imagem > img').addClass('img-fluid');
-        //NÃO ESQUEÇA DE DEFINIR UM ALT PARA SUA IMAGEM
-        $('#imagem > img').attr("alt","Logo EDB 2017");
-    });
-});</code></pre>
-                    <h3 class="py-4">Resultado:</h3>
-                    <p id="imagem"></p>
-                    <p><a class="btn btn-success" href="index.html">VOLTAR</a></p>
-                </div>
-            </div>
-            <div class="row edb-gradient-azul fixed-bottom">
-                <div class="col text-center py-2 edb-branco">
-                    <p class="my-0">&copy;2017 - Est&uacute;dio Digital Bocca</p>
-                </div>
-            </div>
+      <a href="https://github.com/digitalbocca/ImagemBase64" class="github-corner">
+        <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#fff; color:#136a8a; position: absolute; top: 0; border: 0; right: 0;">
+          <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+          <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+          <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+        </svg>
+      </a>
+      <div class="row edb-gradient-azul edb-texto edb-branco edb-sombra py-5">
+        <div class="col">
+          <h1 class="display-1 text-center">ImagemBase64</h1>
         </div>
-        <!--Jquery-->
-        <script src="https://code.jquery.com/jquery-3.1.1.min.js"
-                integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-                crossorigin="anonymous"></script>
-        <!--Prism-->
-        <script src="js/prism.js"></script>
-        <script type="text/javascript">
-            //INICIO DO CODIGO JQUERY
-            $(document).ready(function(){
-                //GET PASSANDO O PARAMETRO JSON:TRUE
-                $.get("logo.php",{json: "true"})
-                //QUANDO RECEBER A RESPOSTA
-                .done(function(resposta){
-                    //CRIA UM OBJETO IMAGEM
-                    var imagem = new Image();
-                    //COLOCA O JSON RECEBIDO NO SRC DO OBJETO
-                    imagem.src = 'data:image/png;base64,'+resposta.imagem;
-                    //INSERE A IMAGEM NA DIV
-                    $('#imagem').append(imagem);
-                    //APROVEITE PARA ADICIONAR AS CLASSES CSS SE PRECISAR
-                    $('#imagem > img').addClass('img-fluid');
-                    //NÃO ESQUEÇA DE DEFINIR UM ALT PARA SUA IMAGEM
-                    $('#imagem > img').attr("alt","Logo EDB 2017");
-                });
-            });
-        </script>
-    </body>
+      </div>
+      <div class="row justify-content-center pt-3 pb-5">
+        <div class="col col-md-6 text-center">
+          <h3 class="py-4">Como usar em JAVASCRIPT:</h3>
+          <p>Este exemplo usa Jquery.</p>
+          <p>Faça um ajax para o arquivo php que retorna o JSON.</p>
+          <p>Pegue o retorno em base64 e use como uma imagem.</p>
+          <h3 class="py-4">Código - HTML:</h3>
+          <script src="https://gist.github.com/digitalbocca/d2ce586fb54b5079eb3c2ec754c6137f.js?file=JavascriptHTML.md"></script>
+          <h3 class="py-4">Código - JQUERY:</h3>
+          <script src="https://gist.github.com/digitalbocca/d2ce586fb54b5079eb3c2ec754c6137f.js?file=JavascriptJQuery.md"></script>
+          <h3 class="py-4">Resultado:</h3>
+          <p id="imagem"></p>
+          <p><a class="btn btn-success" href="index.html">VOLTAR</a></p>
+        </div>
+      </div>
+      <div class="row edb-gradient-azul fixed-bottom">
+        <div class="col text-center py-2 edb-branco">
+          <p class="my-0">&copy;2017 - Est&uacute;dio Digital Bocca</p>
+        </div>
+      </div>
+    </div>
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      //INICIO DO CODIGO JQUERY
+      $(document).ready(function(){
+        //GET PASSANDO O PARAMETRO JSON:TRUE
+        $.get("logo.php",{json: "true"})
+        //QUANDO RECEBER A RESPOSTA
+        .done(function(resposta){
+          //CRIA UM OBJETO IMAGEM
+          var imagem = new Image();
+          //COLOCA O JSON RECEBIDO NO SRC DO OBJETO
+          imagem.src = 'data:image/png;base64,'+resposta.imagem;
+          //INSERE A IMAGEM NA DIV
+          $('#imagem').append(imagem);
+          //APROVEITE PARA ADICIONAR AS CLASSES CSS SE PRECISAR
+          $('#imagem > img').addClass('img-fluid');
+          //NÃO ESQUEÇA DE DEFINIR UM ALT PARA SUA IMAGEM
+          $('#imagem > img').attr("alt","Logo EDB 2017");
+        });
+      });
+    </script>
+  </body>
 </html>
