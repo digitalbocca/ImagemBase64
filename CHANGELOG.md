@@ -1,5 +1,11 @@
 ## ImagemBase64 ##
-## v2.2.0 ##
+## v2.3.0 ##
+
+**Mudanças na v2.3.0**
+
+- Correções no README.md
+- Imagens by LoremFlickr.
+- Atualizado para Bootstrap 4 Beta.
 
 **Mudanças na v2.2.0**
 

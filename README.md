@@ -69,21 +69,21 @@ Adicionei esse código Jquery
 ```javascript
 //INICIO DO CODIGO JQUERY
 $(document).ready(function(){
-    //GET PASSANDO O PARAMETRO JSON:TRUE
-    $.get("logo.php",{json: "true"})
-    //QUANDO RECEBER A RESPOSTA
-    .done(function(resposta){
-        //CRIA UM OBJETO IMAGEM
-        var imagem = new Image();
-        //COLOCA O JSON RECEBIDO NO SRC DO OBJETO
-        imagem.src = 'data:image/png;base64,'+resposta.imagem;
-        //INSERE A IMAGEM NA DIV
-        $('#imagem').append(imagem);
-        //APROVEITE PARA ADICIONAR AS CLASSES CSS SE PRECISAR
-        $('#imagem > img').addClass('img-fluid');
-        //NÃO ESQUEÇA DE DEFINIR UM ALT PARA SUA IMAGEM
-        $('#imagem > img').attr("alt","Logo EDB 2017");
-    });
+  //GET PASSANDO O PARAMETRO JSON:TRUE
+  $.get("logo.php",{json: "true"})
+  //QUANDO RECEBER A RESPOSTA
+  .done(function(resposta){
+    //CRIA UM OBJETO IMAGEM
+    var imagem = new Image();
+    //COLOCA O JSON RECEBIDO NO SRC DO OBJETO
+    imagem.src = 'data:image/png;base64,'+resposta.imagem;
+    //INSERE A IMAGEM NA DIV
+    $('#imagem').append(imagem);
+    //APROVEITE PARA ADICIONAR AS CLASSES CSS SE PRECISAR
+    $('#imagem > img').addClass('img-fluid');
+    //NÃO ESQUEÇA DE DEFINIR UM ALT PARA SUA IMAGEM
+    $('#imagem > img').attr("alt","Logo EDB 2017");
+  });
 });
 ```
 
@@ -94,8 +94,10 @@ https://estudiodigitalbocca.com.br/labs/ImagemBase64/javascript.html
 
 > Este código tem somente finalidade didática e não deve ser usado em produção.
 
-> O código php não segue nenhum padrão, servindo apenas para simular o funcionamento.
+> Os códigos não seguem nenhum padrão de codificação, servindo apenas para simular o funcionamento.
 
 > O objetivo é sugerir formas de usar base64 para imagens na prática.
+
+> Envie sua sugestão ou correção.
 
 > Obrigado.
