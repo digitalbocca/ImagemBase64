@@ -92,7 +92,13 @@ https://estudiodigitalbocca.com.br/labs/ImagemBase64/javascript.html
 
 ---
 
-> Este código tem somente finalidade didática e não deve ser usado em produção.
+## LICENÇA ##
+
+MIT
+
+---
+
+> Este código tem finalidade didática e não deve ser usado em produção.
 
 > Os códigos não seguem nenhum padrão de codificação, servindo apenas para simular o funcionamento.
 

@@ -1,5 +1,10 @@
 ## ImagemBase64 ##
-## v2.3.0 ##
+## v2.4.0 ##
+
+**Mudanças na v2.4.0**
+
+- Pequenas correções nos comentários.
+- Adcionada informação de Licença.
 
 **Mudanças na v2.3.0**
 
