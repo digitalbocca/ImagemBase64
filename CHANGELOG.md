@@ -1,5 +1,9 @@
 ## ImagemBase64 ##
-## v2.4.0 ##
+## v2.5.0 ##
+
+**Mudanças na v2.5.0**
+
+- Automatizado o Controle de Versão.
 
 **Mudanças na v2.4.0**
 

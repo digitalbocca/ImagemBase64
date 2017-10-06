@@ -1,0 +1,34 @@
+{
+  "name": "imagembase64",
+  "version": "2.5.0",
+  "description": "Entrega uma imagem em base64.",
+  "main": "index.html",
+  "config": {
+    "commitMessage": "Automatizado o Controle de Versão"
+  },
+  "scripts": {
+    "git": "npm run gitstatus && npm run gitadd && npm run gitcommit && npm run gittag && npm run gporigin && npm run gpbitbucket && npm run gpgitlab",
+    "gitstatus": "git status",
+    "gitadd": "git add .",
+    "gittag": "git tag v%npm_package_version%",
+    "gitcommit": "git commit -m \"%npm_package_config_commitMessage%\"",
+    "gporigin": "git push origin master --tags",
+    "gpgitlab": "git push gitlab master --tags",
+    "gpbitbucket": "git push bitbucket master --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digitalbocca/ImagemBase64.git"
+  },
+  "keywords": [
+    "imagem",
+    "image",
+    "base64"
+  ],
+  "author": "Gabriel Bertola Bocca - gabriel at estudiodigitalbocca.com.br",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/digitalbocca/ImagemBase64/issues"
+  },
+  "homepage": "https://github.com/digitalbocca/ImagemBase64#readme"
+}
