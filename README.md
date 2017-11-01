@@ -1,7 +1,10 @@
 # ImagemBase64 #
+## v2.6.0 ##
 
-Entrega uma imagem em base64.
-Recebendo um parâmetro "json=true" no GET ele retorna um JSON, senão retorna a imagem.
+# ATENÇÃO: REMOVIDO O SUPORTE PARA PHP #
+## Estamos Migrando nossa Plataforma ##
+
+> Trabalha com imagens usando base64.
 
 [![forthebadge](http://forthebadge.com/images/badges/contains-cat-gifs.svg)](http://forthebadge.com)
 [![forthebadge](http://forthebadge.com/images/badges/uses-badges.svg)](http://forthebadge.com)
@@ -12,45 +15,9 @@ Recebendo um parâmetro "json=true" no GET ele retorna um JSON, senão retorna a
 
 ## Exemplo ##
 
+(Link para a v2.5.0 - Estamos mudando nossa plataforma)
+
 http://estudiodigitalbocca.com.br/labs/ImagemBase64/
-
----
-
-## Usando em PHP ##
-
-Entre diretamente no arquivo para ver a imagem.
-
-`http://localhost/logo.php`
-
-**Ex:**
-https://estudiodigitalbocca.com.br/labs/ImagemBase64/logo.php
-
-Ou faça um GET para receber o json.
-
-`http://localhost/logo.php?json=true`
-
-**Ex:**
-https://estudiodigitalbocca.com.br/labs/ImagemBase64/logo.php?json=true
-
-Simule um erro de parâmetro incorreto.
-
-`http://localhost/logo.php?json=batatinha`
-
-**Ex:**
-https://estudiodigitalbocca.com.br/labs/ImagemBase64/logo.php?json=batatinha
-
----
-
-## HTML e PHP ##
-
-Use diretamente no HTML.
-
-```html
-<img src='caminho/do/arquivo/logo.php'>
-```
-
-**Ex:**
-https://estudiodigitalbocca.com.br/labs/ImagemBase64/htmlpuro.html
 
 ---
 

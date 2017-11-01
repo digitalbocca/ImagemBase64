@@ -1,10 +1,10 @@
 {
   "name": "imagembase64",
-  "version": "2.5.0",
+  "version": "2.6.0",
   "description": "Entrega uma imagem em base64.",
   "main": "index.html",
   "config": {
-    "commitMessage": "Automatizado o Controle de Versão"
+    "commitMessage": "Removido Suporte ao PHP"
   },
   "scripts": {
     "git": "npm run gitstatus && npm run gitadd && npm run gitcommit && npm run gittag && npm run gporigin && npm run gpbitbucket && npm run gpgitlab",

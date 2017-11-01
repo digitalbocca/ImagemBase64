@@ -1,5 +1,9 @@
 ## ImagemBase64 ##
-## v2.5.0 ##
+## v2.6.0 ##
+
+**Mudanças na v2.6.0**
+
+- Removido Suporte ao PHP.
 
 **Mudanças na v2.5.0**
 
