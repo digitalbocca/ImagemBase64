@@ -1,5 +1,11 @@
-## ImagemBase64 ##
-## v2.6.0 ##
+# ImagemBase64 #
+## v3.0.0 ##
+
+**Mudanças na v3.0.0**
+
+- Removido totalmente o suporte PHP.
+- Trocado jQuery por Zepto.
+- Utilizando JSON Bin como API.
 
 **Mudanças na v2.6.0**
 

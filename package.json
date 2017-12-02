@@ -1,10 +1,10 @@
 {
   "name": "imagembase64",
-  "version": "2.6.0",
+  "version": "3.0.0",
   "description": "Entrega uma imagem em base64.",
   "main": "index.html",
   "config": {
-    "commitMessage": "Removido Suporte ao PHP"
+    "commitMessage": "Utilizando JSON Bin como API"
   },
   "scripts": {
     "git": "npm run gitstatus && npm run gitadd && npm run gitcommit && npm run gittag && npm run gporigin && npm run gpbitbucket && npm run gpgitlab",

@@ -1,8 +1,5 @@
 # ImagemBase64 #
-## v2.6.0 ##
-
-# ATENÇÃO: REMOVIDO O SUPORTE PARA PHP #
-## Estamos Migrando nossa Plataforma ##
+## v3.0.0 ##
 
 > Trabalha com imagens usando base64.
 
@@ -23,7 +20,7 @@ http://estudiodigitalbocca.com.br/labs/ImagemBase64/
 
 ## HTML e Javascript ##
 
-Exemplo usando JS (Usei Jquery para fazer mais rápido, mas use como quiser):
+Exemplo usando JS (Usei Zepto para fazer mais rápido, mas use como quiser):
 
 Criei uma div com o id imagem no html:
 
@@ -34,27 +31,26 @@ Criei uma div com o id imagem no html:
 Adicionei esse código Jquery
 
 ```javascript
-//INICIO DO CODIGO JQUERY
-$(document).ready(function(){
-  //GET PASSANDO O PARAMETRO JSON:TRUE
-  $.get("logo.php",{json: "true"})
-  //QUANDO RECEBER A RESPOSTA
-  .done(function(resposta){
-    //CRIA UM OBJETO IMAGEM
-    var imagem = new Image();
-    //COLOCA O JSON RECEBIDO NO SRC DO OBJETO
-    imagem.src = 'data:image/png;base64,'+resposta.imagem;
-    //INSERE A IMAGEM NA DIV
-    $('#imagem').append(imagem);
-    //APROVEITE PARA ADICIONAR AS CLASSES CSS SE PRECISAR
-    $('#imagem > img').addClass('img-fluid');
-    //NÃO ESQUEÇA DE DEFINIR UM ALT PARA SUA IMAGEM
-    $('#imagem > img').attr("alt","Logo EDB 2017");
-  });
-});
+//INICIO DO CODIGO ZEPTO
+$(document).ready(() => {
+  //GET PARA A API
+  $.getJSON('https://api.jsonbin.io/b/5a2311793cc482364837a119', resposta => {
+    // CRIA UM OBJETO IMAGEM
+    let imagem = new Image()
+    // COLOCA O JSON RECEBIDO NO SRC DO OBJETO
+    imagem.src = 'data:image/png;base64,' + resposta.imagem
+    // INSERE A IMAGEM NA DIV
+    $('#imagem').append(imagem)
+    // APROVEITE PARA ADICIONAR AS CLASSES CSS SE PRECISAR
+    $('#imagem > img').addClass('img-fluid')
+    // NÃO ESQUEÇA DE DEFINIR UM ALT PARA SUA IMAGEM
+    $('#imagem > img').attr("alt","Logo EDB 2017")
+  })
+})
 ```
 
 **Ex:**
+(Link para a v2.5.0 - Estamos mudando nossa plataforma)
 https://estudiodigitalbocca.com.br/labs/ImagemBase64/javascript.html
 
 ---

@@ -4,7 +4,7 @@
   /**
   * (c)2017 - Estúdio Digital Bocca
   *
-  * index.html - Parte do Projeto digitalbocca/ImagemBase64
+  * javascript.html - Parte do Projeto digitalbocca/ImagemBase64
   * https://github.com/digitalbocca/ImagemBase64
   *
   * (Link para a v2.5.0 - Estamos mudando nossa plataforma)
@@ -14,7 +14,7 @@
   *
   * Paletas de Gradiente por: http://uigradients.com
   * GitHub Corners por: http://tholman.com/github-corners/
-  * jQuery: https://jquery.com
+  * Zepto
   */
 -->
 
@@ -44,34 +44,45 @@
           <h1 class="display-1 text-center">ImagemBase64</h1>
         </div>
       </div>
-      <div class="row pt-3 pb-5">
-        <div class="col text-center py-3">
-          <img src="https://loremflickr.com/300/300/cat?random=1" class="py-4 img-fluid rounded-circle" alt="ImagemBase64"/>          
-          <h4>Implementado apenas em HTML.</h4>
-          <p class="py-3">
-            <a href="htmlpuro.html" class="btn btn-primary btn-lg">HTML</a>
-          </p>
-        </div>
-        <div class="col text-center py-3">
-          <img src="https://loremflickr.com/300/300/cat?random=2" class="py-4 img-fluid rounded-circle" alt="ImagemBase64"/>          
-          <h4>
-            Implementado com JS<br>
-            <small>Ajax com Jquery.</small>
-          </h4>
-          <p class="py-3">
-            <a href="javascript.html" class="btn btn-primary btn-lg">JAVASCRIPT</a>
-          </p>
+      <div class="row justify-content-center pt-3 pb-5">
+        <div class="col col-md-6 text-center">
+          <h3 class="py-4">Como usar em JAVASCRIPT:</h3>
+          <p>Este exemplo usa Zepto.</p>
+          <p>Faça um ajax para a API que retorna o JSON.</p>
+          <p>Pegue o retorno em base64 e use como uma imagem.</p>
+          <h3 class="py-4">Código - HTML:</h3>
+          <script src="https://gist.github.com/digitalbocca/d2ce586fb54b5079eb3c2ec754c6137f.js?file=JavascriptHTML.md"></script>
+          <h3 class="py-4">Código - Zepto:</h3>
+          <script src="https://gist.github.com/digitalbocca/d2ce586fb54b5079eb3c2ec754c6137f.js?file=JavascriptJQuery.md"></script>
+          <h3 class="py-4">Resultado:</h3>
+          <p id="imagem"></p>
         </div>
       </div>
       <div class="row edb-gradient-azul fixed-bottom">
         <div class="col text-center py-2 edb-branco">
-          <p class="my-0">&copy;2017 - Est&uacute;dio Digital Bocca - Imagens por <a class="text-light" href="http://loremflickr.com/" target="_blank">loremflickr.com</a></p>
+          <p class="my-0">&copy;2017 - Est&uacute;dio Digital Bocca</p>
         </div>
       </div>
     </div>
-    <!--Jquery-->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-            crossorigin="anonymous"></script>
+    <!--Zepto-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js" integrity="sha256-vrn14y7WH7zgEElyQqm2uCGSQrX/xjYDjniRUQx3NyU=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      //INICIO DO CODIGO ZEPTO
+      $(document).ready(() => {
+        //GET PARA A API
+        $.getJSON('https://api.jsonbin.io/b/5a2311793cc482364837a119', resposta => {
+          // CRIA UM OBJETO IMAGEM
+          let imagem = new Image()
+          // COLOCA O JSON RECEBIDO NO SRC DO OBJETO
+          imagem.src = 'data:image/png;base64,' + resposta.imagem
+          // INSERE A IMAGEM NA DIV
+          $('#imagem').append(imagem)
+          // APROVEITE PARA ADICIONAR AS CLASSES CSS SE PRECISAR
+          $('#imagem > img').addClass('img-fluid')
+          // NÃO ESQUEÇA DE DEFINIR UM ALT PARA SUA IMAGEM
+          $('#imagem > img').attr("alt","Logo EDB 2017")
+        })
+      })
+    </script>
   </body>
 </html>
