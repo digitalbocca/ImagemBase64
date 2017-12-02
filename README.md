@@ -1,7 +1,9 @@
 # ImagemBase64 #
-## v3.1.0 ##
+## v3.2.0 ##
 
 > Trabalha com imagens usando base64.
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/36b4c597ca9797fe54ab/maintainability)](https://codeclimate.com/github/digitalbocca/ImagemBase64/maintainability)
 
 [![forthebadge](http://forthebadge.com/images/badges/contains-cat-gifs.svg)](http://forthebadge.com)
 [![forthebadge](http://forthebadge.com/images/badges/uses-badges.svg)](http://forthebadge.com)

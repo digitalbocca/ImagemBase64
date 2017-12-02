@@ -1,10 +1,10 @@
 {
   "name": "imagembase64",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "description": "Entrega uma imagem em base64.",
   "main": "index.html",
   "config": {
-    "commitMessage": "Adicionado o novo link de exemplo"
+    "commitMessage": "Adicionado Etiqueta Code Climate"
   },
   "scripts": {
     "git": "npm run gitstatus && npm run gitadd && npm run gitcommit && npm run gittag && npm run gporigin && npm run gpbitbucket && npm run gpgitlab",

@@ -1,5 +1,9 @@
 # ImagemBase64 #
-## v3.1.0 ##
+## v3.2.0 ##
+
+**Mudanças na v3.2.0**
+
+- Adicionado Etiqueta Code Climate.
 
 **Mudanças na v3.1.0**
 
