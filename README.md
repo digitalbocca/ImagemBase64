@@ -1,5 +1,5 @@
 # ImagemBase64 #
-## v3.0.0 ##
+## v3.1.0 ##
 
 > Trabalha com imagens usando base64.
 
@@ -12,9 +12,7 @@
 
 ## Exemplo ##
 
-(Link para a v2.5.0 - Estamos mudando nossa plataforma)
-
-http://estudiodigitalbocca.com.br/labs/ImagemBase64/
+https://digitalbocca.github.io/ImagemBase64/
 
 ---
 
@@ -28,7 +26,7 @@ Criei uma div com o id imagem no html:
 <div id="imagem"></div>
 ```
 
-Adicionei esse código Jquery
+Adicionei esse código Zepto
 
 ```javascript
 //INICIO DO CODIGO ZEPTO
@@ -48,12 +46,6 @@ $(document).ready(() => {
   })
 })
 ```
-
-**Ex:**
-(Link para a v2.5.0 - Estamos mudando nossa plataforma)
-https://estudiodigitalbocca.com.br/labs/ImagemBase64/javascript.html
-
----
 
 ## LICENÇA ##
 

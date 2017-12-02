@@ -1,10 +1,10 @@
 {
   "name": "imagembase64",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Entrega uma imagem em base64.",
   "main": "index.html",
   "config": {
-    "commitMessage": "Utilizando JSON Bin como API"
+    "commitMessage": "Adicionado o novo link de exemplo"
   },
   "scripts": {
     "git": "npm run gitstatus && npm run gitadd && npm run gitcommit && npm run gittag && npm run gporigin && npm run gpbitbucket && npm run gpgitlab",

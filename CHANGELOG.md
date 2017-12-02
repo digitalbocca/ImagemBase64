@@ -1,5 +1,10 @@
 # ImagemBase64 #
-## v3.0.0 ##
+## v3.1.0 ##
+
+**Mudanças na v3.1.0**
+
+- Adicionado link do Zepto.
+- Adicionado o novo link de exemplo.
 
 **Mudanças na v3.0.0**
 
