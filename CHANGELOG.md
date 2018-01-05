@@ -1,5 +1,10 @@
 # ImagemBase64 #
-## v3.2.0 ##
+## v3.3.0 ##
+
+**Mudanças na v3.3.0**
+
+- Resolvida a issue#5.
+- Resolvida a issue#3.
 
 **Mudanças na v3.2.0**
 
