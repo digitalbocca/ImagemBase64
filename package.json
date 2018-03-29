@@ -1,20 +1,21 @@
 {
   "name": "imagembase64",
-  "version": "3.3.0",
+  "version": "3.4.0",
   "description": "Entrega uma imagem em base64.",
   "main": "index.html",
   "config": {
-    "commitMessage": "Melhoria no css, issue#3, issue#5"
+    "commitMessage": "Organização das classes no arquivo css"
   },
   "scripts": {
-    "git": "npm run gitstatus && npm run gitadd && npm run gitcommit && npm run gittag && npm run gporigin && npm run gpbitbucket && npm run gpgitlab",
-    "gitstatus": "git status",
-    "gitadd": "git add .",
-    "gittag": "git tag v%npm_package_version%",
-    "gitcommit": "git commit -m \"%npm_package_config_commitMessage%\"",
-    "gporigin": "git push origin master --tags",
-    "gpgitlab": "git push gitlab master --tags",
-    "gpbitbucket": "git push bitbucket master --tags"
+    "dev": "npx http-server -o",
+    "git": "npm run gst && npm run gad && npm run gco && npm run gta && npm run gpo && npm run gpb && npm run gpg",
+    "gst": "git status",
+    "gad": "git add .",
+    "gco": "cross-var git commit -m \"$npm_package_config_commitMessage\"",
+    "gta": "cross-var git tag v$npm_package_version",
+    "gpo": "git push origin master --tags",
+    "gpb": "git push bitbucket master --tags",
+    "gpg": "git push gitlab master --tags"
   },
   "repository": {
     "type": "git",
@@ -30,5 +31,8 @@
   "bugs": {
     "url": "https://github.com/digitalbocca/ImagemBase64/issues"
   },
-  "homepage": "https://github.com/digitalbocca/ImagemBase64#readme"
+  "homepage": "https://github.com/digitalbocca/ImagemBase64#readme",
+  "devDependencies": {
+    "cross-var-no-babel": "^1.2.0"
+  }
 }

@@ -1,5 +1,6 @@
-# ImagemBase64 #
-## v3.3.0 ##
+# ImagemBase64
+
+## v3.4.0
 
 > Trabalha com imagens usando base64.
 
@@ -12,13 +13,13 @@
 
 ---
 
-## Exemplo ##
+## Exemplo
 
-https://digitalbocca.github.io/ImagemBase64/
+<https://digitalbocca.github.io/ImagemBase64/>
 
 ---
 
-## HTML e Javascript ##
+## HTML e Javascript
 
 Exemplo usando JS (Usei Zepto para fazer mais rápido, mas use como quiser):
 
@@ -49,18 +50,18 @@ $(document).ready(() => {
 })
 ```
 
-## LICENÇA ##
+## LICENÇA
 
 MIT
 
 ---
 
 > Este código tem finalidade didática e não deve ser usado em produção.
-
+>
 > Os códigos não seguem nenhum padrão de codificação, servindo apenas para simular o funcionamento.
-
+>
 > O objetivo é sugerir formas de usar base64 para imagens na prática.
-
+>
 > Envie sua sugestão ou correção.
-
+>
 > Obrigado.

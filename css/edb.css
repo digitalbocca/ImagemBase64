@@ -1,5 +1,5 @@
 /**
- * (c)2017 - Estúdio Digital Bocca
+ * (c)2017-2018 - Estúdio Digital Bocca
  *
  * edb.css - Parte do Projeto digitalbocca/ImagemBase64
  * https://github.com/digitalbocca/ImagemBase64
@@ -10,20 +10,15 @@
  *
  * Paletas de Gradiente por: http://uigradients.com
  * GitHub Corners por: http://tholman.com/github-corners/
- * jQuery: https://jquery.com
+ * JSON Bin: https://jsonbin.io
+ * Zepto JS: http://zeptojs.com
  */
 
-html,body{
+body, html{
   height: 100%;
   min-height: 100%;
   position: relative;
   margin: 0;
-}
-
-.edb-gradient-azul{
-  background: #136a8a;
-  background: -webkit-linear-gradient(to left, #136a8a , #267871);
-  background: linear-gradient(to left, #136a8a , #267871);
 }
 
 .edb-center{
@@ -37,14 +32,6 @@ html,body{
   transform: translateY(-50%);
 }
 
-.edb-texto{
-  font-family: 'Denk One', sans-serif;
-}
-
-.edb-branco{
-  color: #fff;
-}
-
 .edb-5{
   font-size: 5rem;
 }
@@ -53,8 +40,22 @@ html,body{
   font-size: 8rem;
 }
 
+.edb-branco{
+  color: #fff;
+}
+
+.edb-gradient-azul{
+  background: #136a8a;
+  background: -webkit-linear-gradient(to left, #136a8a , #267871);
+  background: linear-gradient(to left, #136a8a , #267871);
+}
+
 .edb-sombra{
   text-shadow: 1px 1px 3px black;
+}
+
+.edb-texto{
+  font-family: 'Denk One', sans-serif;
 }
 
 .highlight{
