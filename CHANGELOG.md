@@ -1,9 +1,14 @@
 # ImagemBase64
 
-## v3.4.0
+## v3.4.1
+
+### Mudanças na v3.4.1
+
+- Correção no controle de versão.
 
 ### Mudanças na v3.4.0
 
+- Adicionado favicon.
 - Organização das classes no arquivo css.
 - Atualização das datas de copyright.
 - Atualizado CDN do Bootstrap.
