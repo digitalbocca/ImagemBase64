@@ -1,6 +1,11 @@
 # ImagemBase64
 
-## v3.4.1
+## v3.5.0
+
+### Mudanças na v3.5.0
+
+- Atualizado CDN do bootstrap.
+- Adicionado http-server nas devDependencies.
 
 ### Mudanças na v3.4.1
 

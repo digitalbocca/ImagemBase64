@@ -1,13 +1,13 @@
 {
   "name": "imagembase64",
-  "version": "3.4.1",
+  "version": "3.5.0",
   "description": "Entrega uma imagem em base64.",
   "main": "index.html",
   "config": {
-    "commitMessage": "Correção no controle de versão"
+    "commitMessage": "Atualizado CDN bootstrap"
   },
   "scripts": {
-    "dev": "npx http-server -o",
+    "dev": "http-server -o",
     "git": "npm run gst && npm run gad && npm run gco && npm run gta && npm run gpo && npm run gpb && npm run gpg",
     "gst": "git status",
     "gad": "git add .",
@@ -33,6 +33,7 @@
   },
   "homepage": "https://github.com/digitalbocca/ImagemBase64#readme",
   "devDependencies": {
-    "cross-var-no-babel": "^1.2.0"
+    "cross-var-no-babel": "^1.2.0",
+    "http-server": "^0.11.1"
   }
 }
