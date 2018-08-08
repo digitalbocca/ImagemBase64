@@ -1,6 +1,10 @@
 # ImagemBase64
 
-## v3.7.0
+## v3.8.0
+
+### Mudanças na v3.8.0
+
+- Atualizado CDN do bootstrap.
 
 ### Mudanças na v3.7.0
 
