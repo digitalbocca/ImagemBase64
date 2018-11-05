@@ -1,6 +1,10 @@
 # ImagemBase64
 
-## v3.8.0
+## v3.9.0
+
+### Mudanças na v3.9.0
+
+- Utilizando StandardJS.
 
 ### Mudanças na v3.8.0
 

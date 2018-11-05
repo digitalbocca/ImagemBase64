@@ -1,10 +1,10 @@
 {
   "name": "imagembase64",
-  "version": "3.8.0",
+  "version": "3.9.0",
   "description": "Entrega uma imagem em base64.",
   "main": "index.html",
   "config": {
-    "commitMessage": "Atualizado CDN bootstrap"
+    "commitMessage": "Utilizando StandardJS"
   },
   "scripts": {
     "dev": "http-server -o",
@@ -34,6 +34,7 @@
   "homepage": "https://github.com/digitalbocca/ImagemBase64#readme",
   "devDependencies": {
     "cross-var-no-babel": "^1.2.0",
-    "http-server": "^0.11.1"
+    "http-server": "^0.11.1",
+    "standard": "^12.0.1"
   }
 }
