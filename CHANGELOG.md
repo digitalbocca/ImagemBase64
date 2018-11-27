@@ -1,6 +1,10 @@
 # ImagemBase64
 
-## v3.9.0
+## v3.10.0
+
+### Mudanças na v3.10.0
+
+- Alterações nos selos do README.
 
 ### Mudanças na v3.9.0
 

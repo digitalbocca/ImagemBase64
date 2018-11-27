@@ -1,16 +1,18 @@
 # ImagemBase64
 
-## v3.9.0
+## v3.10.0
 
 > Trabalha com imagens usando base64.
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/36b4c597ca9797fe54ab/maintainability)](https://codeclimate.com/github/digitalbocca/ImagemBase64/maintainability)
-
-[![forthebadge](http://forthebadge.com/images/badges/contains-cat-gifs.svg)](http://forthebadge.com)
-[![forthebadge](http://forthebadge.com/images/badges/uses-badges.svg)](http://forthebadge.com)
-[![forthebadge](http://forthebadge.com/images/badges/contains-technical-debt.svg)](http://forthebadge.com)
-[![forthebadge](http://forthebadge.com/images/badges/built-by-developers.svg)](http://forthebadge.com)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![EDB](https://badgen.net/badge/produto/EDB/f19b2c)](https://estudiodigitalbocca.com.br)
+[![GHL](https://badgen.net/github/license/digitalbocca/ImagemBase64)](https://digitalbocca.github.io/ImagemBase64)
+
+[![forthebadge](https://forthebadge.com/images/badges/contains-cat-gifs.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/uses-badges.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/contains-technical-debt.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
 
 [![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
 
