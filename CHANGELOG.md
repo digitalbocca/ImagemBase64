@@ -1,6 +1,17 @@
 # ImagemBase64
 
-## v3.11.0
+## v4.0.0
+
+### Mudanças na v4.0.0
+
+- index foi modularizada.
+- CSS agora é compilado no build.
+- Template utiliza PUG.
+- Utilizando Parcel Bundler.
+- Criada pasta src.
+- Fonte do topo substituída.
+- Atualização nas mensagens de copyright.
+- Melhoria na documentação.
 
 ### Mudanças na v3.11.0
 

@@ -1,0 +1,19 @@
+//- Zepto
+script(src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js", integrity="sha256-vrn14y7WH7zgEElyQqm2uCGSQrX/xjYDjniRUQx3NyU=", crossorigin="anonymous")
+script.
+  // INICIO DO CODIGO ZEPTO
+  $(document).ready(() => {
+    // GET PARA A API
+    $.getJSON('https://api.jsonbin.io/b/5a2311793cc482364837a119', resposta => {
+      // CRIA UM OBJETO IMAGEM
+      let imagem = new Image()
+      // COLOCA O JSON RECEBIDO NO SRC DO OBJETO
+      imagem.src = 'data:image/png;base64,' + resposta.imagem
+      // INSERE A IMAGEM NA DIV
+      $('#imagem').append(imagem)
+      // APROVEITE PARA ADICIONAR AS CLASSES CSS SE PRECISAR
+      $('#imagem > img').addClass('img-fluid')
+      // NÃO ESQUEÇA DE DEFINIR UM ALT PARA SUA IMAGEM
+      $('#imagem > img').attr("alt","Logo EDB 2017")
+    })
+  })

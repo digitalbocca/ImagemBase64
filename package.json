@@ -1,13 +1,14 @@
 {
   "name": "imagembase64",
-  "version": "3.11.0",
+  "version": "4.0.0",
   "description": "Entrega uma imagem em base64.",
   "main": "index.html",
   "config": {
-    "commitMessage": "Atualizada a versão do bootstrap via CDN"
+    "commitMessage": "Utilizando Parcel, PUG, SASS"
   },
   "scripts": {
-    "dev": "http-server -o",
+    "dev": "parcel ./src/index.pug -p 8080 --no-cache -d ./docs",
+    "build": "parcel build ./src/index.pug --public-url ./ -d ./docs --no-source-maps --no-cache",
     "git": "npm run gst && npm run gad && npm run gco && npm run gta && npm run gpo && npm run gpb && npm run gpg",
     "gst": "git status",
     "gad": "git add .",
@@ -34,7 +35,11 @@
   "homepage": "https://github.com/digitalbocca/ImagemBase64#readme",
   "devDependencies": {
     "cross-var-no-babel": "^1.2.0",
-    "http-server": "^0.11.1",
+    "parcel-bundler": "^1.11.0",
+    "parcel-plugin-clean-dist": "0.0.6",
+    "pug": "^2.0.3",
+    "sass": "^1.16.1",
     "standard": "^12.0.1"
-  }
+  },
+  "dependencies": {}
 }
