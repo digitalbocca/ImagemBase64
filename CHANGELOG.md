@@ -1,6 +1,11 @@
 # ImagemBase64
 
-## v4.0.0
+## v4.1.0
+
+### Mudanças na v4.1.0
+
+- Atualizado CDN Bootstrap.
+- Atualização de dependências.
 
 ### Mudanças na v4.0.0
 
