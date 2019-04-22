@@ -1,6 +1,10 @@
 # ImagemBase64
 
-## v4.1.0
+## v4.2.0
+
+### Mudanças na v4.2.0
+
+- Atualização de dependências.
 
 ### Mudanças na v4.1.0
 
