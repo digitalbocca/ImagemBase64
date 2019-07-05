@@ -1,6 +1,6 @@
 {
   "name": "imagembase64",
-  "version": "4.2.0",
+  "version": "4.3.0",
   "description": "Entrega uma imagem em base64.",
   "main": "index.html",
   "config": {
@@ -37,8 +37,8 @@
     "cross-var-no-babel": "^1.2.0",
     "parcel-bundler": "^1.12.3",
     "parcel-plugin-clean-dist": "0.0.6",
-    "pug": "^2.0.3",
-    "sass": "^1.19.0",
+    "pug": "^2.0.4",
+    "sass": "^1.22.3",
     "standard": "^12.0.1"
   },
   "dependencies": {}
