@@ -1,10 +1,10 @@
 {
   "name": "imagembase64",
-  "version": "4.4.0",
+  "version": "4.5.0",
   "description": "Entrega uma imagem em base64.",
   "main": "index.html",
   "config": {
-    "commitMessage": "Atualização de dependências"
+    "commitMessage": "Atualizado favicon, aguardando icone estático em edb-site"
   },
   "scripts": {
     "dev": "parcel ./src/index.pug -p 8080 --no-cache -d ./docs",

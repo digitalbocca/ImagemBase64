@@ -1,6 +1,10 @@
 # ImagemBase64
 
-## v4.4.0
+## v4.5.0
+
+### Mudanças na v4.5.0
+
+- Atualizado favicon, aguardando icone estático em edb-site.
 
 ### Mudanças na v4.4.0
 
