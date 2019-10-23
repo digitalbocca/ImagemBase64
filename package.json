@@ -1,10 +1,10 @@
 {
   "name": "imagembase64",
-  "version": "4.5.0",
+  "version": "4.6.0",
   "description": "Entrega uma imagem em base64.",
   "main": "index.html",
   "config": {
-    "commitMessage": "Atualizado favicon, aguardando icone estático em edb-site"
+    "commitMessage": "Atualização de dependências"
   },
   "scripts": {
     "dev": "parcel ./src/index.pug -p 8080 --no-cache -d ./docs",
@@ -35,11 +35,11 @@
   "homepage": "https://github.com/digitalbocca/ImagemBase64#readme",
   "devDependencies": {
     "cross-var-no-babel": "^1.2.0",
-    "parcel-bundler": "^1.12.3",
+    "parcel-bundler": "^1.12.4",
     "parcel-plugin-clean-dist": "0.0.6",
     "pug": "^2.0.4",
-    "sass": "^1.22.9",
-    "standard": "^13.1.0"
+    "sass": "^1.23.1",
+    "standard": "^14.3.1"
   },
   "dependencies": {}
 }
