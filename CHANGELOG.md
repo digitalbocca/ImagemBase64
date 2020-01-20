@@ -1,6 +1,15 @@
 # ImagemBase64
 
-## v5.0.0
+## v5.0.2
+
+### Mudanças na v5.0.2
+
+- Correção no purgeCSS, agora ignora a .highlight.
+- Correção no README.
+
+### Mudanças na v5.0.1
+
+- Resolvido problema no controle de versão.
 
 ### Mudanças na v5.0.0
 
@@ -12,6 +21,14 @@
 - Removido Zepto.
 - Trocado plugin que limpa a pasta docs.
 - Atualização de dependências.
+
+### Mudanças na v4.6.2
+
+- Merge pull request #6 from digitalbocca/dependabot/npm_and_yarn/serialize-to-js-3.0.1
+
+### Mudanças na v4.6.1
+
+- Bump serialize-to-js from 3.0.0 to 3.0.1
 
 ### Mudanças na v4.6.0
 

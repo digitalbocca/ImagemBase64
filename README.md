@@ -1,6 +1,6 @@
 # ImagemBase64
 
-## v5.0.0
+## v5.0.2
 
 > Trabalha com imagens usando base64.
 
@@ -26,7 +26,7 @@
 
 ## HTML e Javascript
 
-Exemplo usando JS (Usei Zepto para fazer mais rápido, mas use como quiser):
+Exemplo usando JS (Usei axios para fazer mais rápido, mas use como quiser):
 
 Criei uma div com o id imagem no html:
 
@@ -34,25 +34,36 @@ Criei uma div com o id imagem no html:
 <div id="imagem"></div>
 ```
 
-Adicionei esse código Zepto
+Adicionei esse código Javascript
 
 ```javascript
-//INICIO DO CODIGO ZEPTO
-$(document).ready(() => {
-  //GET PARA A API
-  $.getJSON('https://api.jsonbin.io/b/5a2311793cc482364837a119', resposta => {
+'use strict'
+
+// IMPORTAR O AXIOS PARA FAZER A CHAMADA HTTP
+import axios from 'axios'
+
+// INÍCIO DA EXECUÇÃO
+window.onload = async () => {
+  try {
+    // GET PARA A API
+    const data = (await axios.get('https://api.jsonbin.io/b/5a2311793cc482364837a119')).data
     // CRIA UM OBJETO IMAGEM
-    let imagem = new Image()
+    const imagem = new Image()
+    // COLOCA A DIV IMAGEM EM UMA VARIAVEL
+    const divImagem = document.querySelector('#imagem')
     // COLOCA O JSON RECEBIDO NO SRC DO OBJETO
-    imagem.src = 'data:image/png;base64,' + resposta.imagem
+    imagem.src = 'data:image/png;base64,' + data.imagem
     // INSERE A IMAGEM NA DIV
-    $('#imagem').append(imagem)
+    divImagem.append(imagem)
     // APROVEITE PARA ADICIONAR AS CLASSES CSS SE PRECISAR
-    $('#imagem > img').addClass('img-fluid')
+    divImagem.querySelector('img').classList.add('img-fluid')
     // NÃO ESQUEÇA DE DEFINIR UM ALT PARA SUA IMAGEM
-    $('#imagem > img').attr("alt","Logo EDB 2017")
-  })
-})
+    divImagem.querySelector('img').setAttribute('alt', 'Logo EDB 2020')
+  } catch (e) {
+    // CASO OCORRA UM ERRO TRATAREMOS ELE AQUI
+    console.log(e.message)
+  }
+}
 ```
 
 ## LICENÇA

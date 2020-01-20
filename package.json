@@ -1,10 +1,10 @@
 {
   "name": "imagembase64",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "description": "Entrega uma imagem em base64.",
   "main": "index.html",
   "config": {
-    "commitMessage": "Resolvido problema no controle de versão"
+    "commitMessage": "Correção no purgeCSS, agora ignora a .highlight"
   },
   "parcelCleanPaths": [
     "docs"

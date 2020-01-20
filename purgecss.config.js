@@ -1,3 +1,4 @@
 module.exports = {
-  content: ['**/*.pug']
+  content: ['**/*.pug'],
+  whitelist: ['highlight']
 }
