@@ -1,6 +1,17 @@
 # ImagemBase64
 
-## v4.6.0
+## v5.0.0
+
+### Mudanças na v5.0.0
+
+- Utilizando a opção avançada do CSSNano.
+- Adicionado plugin do purgecss para Parcel Bundler.
+- Atualizado CDN bootstrap.
+- Atualização do ano de copyright.
+- Adicionado axios para obter dados da API.
+- Removido Zepto.
+- Trocado plugin que limpa a pasta docs.
+- Atualização de dependências.
 
 ### Mudanças na v4.6.0
 
