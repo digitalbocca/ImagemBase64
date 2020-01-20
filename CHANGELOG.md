@@ -1,6 +1,10 @@
 # ImagemBase64
 
-## v5.0.2
+## v5.0.3
+
+### Mudanças na v5.0.3
+
+- Correção no tamanho do texto do gist.
 
 ### Mudanças na v5.0.2
 

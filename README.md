@@ -1,6 +1,6 @@
 # ImagemBase64
 
-## v5.0.2
+## v5.0.3
 
 > Trabalha com imagens usando base64.
 
