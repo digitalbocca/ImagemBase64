@@ -1,6 +1,52 @@
-# ImagemBase64
+<p align="center">
+  <img src="https://estudiodigitalbocca.com.br/edb-logo.svg" width="200px">
+  <p align="center">Ultima Atualização na v5.1.0</p>
+  <h1 align="center">ImagemBase64</h1>
+  <h4 align="center">
+    Trabalha com imagens usando Base64
+  </h4>
+  <p align="center">
+    <img src="https://badgen.net/badge/version/v5.1.0/orange">
+    <a href="https://codeclimate.com/github/digitalbocca/ImagemBase64/maintainability">
+      <img src="https://api.codeclimate.com/v1/badges/36b4c597ca9797fe54ab/maintainability">
+    </a>
+    <a href="https://standardjs.com">
+      <img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg">
+    </a>
+    <a href="https://estudiodigitalbocca.com.br">
+      <img src="https://badgen.net/badge/produto/EDB/f19b2c">
+    </a>
+    <a href="https://digitalbocca.github.io/ImagemBase64">
+      <img src="https://badgen.net/github/license/digitalbocca/ImagemBase64">
+    </a>
+  </p>
+  <p align="center">
+    <a href="https://github.com/standard/standard">
+      <img src="https://cdn.rawgit.com/standard/standard/master/badge.svg">
+    </a>
+  </p>
+  <p align="center">
+    <a href="https://forthebadge.com">
+      <img src="https://forthebadge.com/images/badges/built-by-developers.svg">
+    </a>
+  </p>
+  <p align="center">(c)2020 - Estúdio Digital Bocca</p>
+</p>
 
-## v5.0.3
+---
+
+# ImagemBase64 - CHANGELOG
+
+---
+
+## REGISTRO DE ALTERAÇÕES
+
+### Mudanças na v5.1.0
+
+- README e CHANGELOG seguem o padrão EDB2020.
+- Correções no arquivo SASS.
+- Atualizado CDN Bootstrap.
+- Atualização de dependências.
 
 ### Mudanças na v5.0.3
 

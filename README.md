@@ -1,20 +1,41 @@
-# ImagemBase64
+<p align="center">
+  <img src="https://estudiodigitalbocca.com.br/edb-logo.svg" width="200px">
+  <p align="center">Ultima Atualização na v5.1.0</p>
+  <h1 align="center">ImagemBase64</h1>
+  <h4 align="center">
+    Trabalha com imagens usando Base64
+  </h4>
+  <p align="center">
+    <img src="https://badgen.net/badge/version/v5.1.0/orange">
+    <a href="https://codeclimate.com/github/digitalbocca/ImagemBase64/maintainability">
+      <img src="https://api.codeclimate.com/v1/badges/36b4c597ca9797fe54ab/maintainability">
+    </a>
+    <a href="https://standardjs.com">
+      <img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg">
+    </a>
+    <a href="https://estudiodigitalbocca.com.br">
+      <img src="https://badgen.net/badge/produto/EDB/f19b2c">
+    </a>
+    <a href="https://digitalbocca.github.io/ImagemBase64">
+      <img src="https://badgen.net/github/license/digitalbocca/ImagemBase64">
+    </a>
+  </p>
+  <p align="center">
+    <a href="https://github.com/standard/standard">
+      <img src="https://cdn.rawgit.com/standard/standard/master/badge.svg">
+    </a>
+  </p>
+  <p align="center">
+    <a href="https://forthebadge.com">
+      <img src="https://forthebadge.com/images/badges/built-by-developers.svg">
+    </a>
+  </p>
+  <p align="center">(c)2020 - Estúdio Digital Bocca</p>
+</p>
 
-## v5.0.3
+---
 
-> Trabalha com imagens usando base64.
-
-[![Maintainability](https://api.codeclimate.com/v1/badges/36b4c597ca9797fe54ab/maintainability)](https://codeclimate.com/github/digitalbocca/ImagemBase64/maintainability)
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-[![EDB](https://badgen.net/badge/produto/EDB/f19b2c)](https://estudiodigitalbocca.com.br)
-[![GHL](https://badgen.net/github/license/digitalbocca/ImagemBase64)](https://digitalbocca.github.io/ImagemBase64)
-
-[![forthebadge](https://forthebadge.com/images/badges/contains-cat-gifs.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/uses-badges.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/contains-technical-debt.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
-
-[![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
+# ImagemBase64 - README
 
 ---
 
@@ -65,6 +86,10 @@ window.onload = async () => {
   }
 }
 ```
+
+## REGISTRO DE ALTERAÇÕES
+
+Veja no arquivo [CHANGELOG](CHANGELOG.md)
 
 ## LICENÇA
 
