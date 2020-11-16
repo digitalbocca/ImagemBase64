@@ -7,7 +7,7 @@ import axios from 'axios'
 window.onload = async () => {
   try {
     // GET PARA A API
-    const data = (await axios.get('https://api.jsonbin.io/b/5a2311793cc482364837a119')).data
+    const data = (await axios.get('https://api.npoint.io/ebb9a70a207e8a394ae5')).data
     // CRIA UM OBJETO IMAGEM
     const imagem = new Image()
     // COLOCA A DIV IMAGEM EM UMA VARIAVEL
