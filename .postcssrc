@@ -1,0 +1,10 @@
+{
+  "plugins": {
+    "postcss-import": {},
+    "postcss-url": {},
+    "postcss-custom-properties": {},
+    "@fullhuman/postcss-purgecss": {
+      "content": ["./src/*.pug"]
+    }
+  }
+}

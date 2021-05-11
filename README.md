@@ -1,12 +1,12 @@
 <p align="center">
   <img src="https://estudiodigitalbocca.com.br/edb-logo.svg" width="200px">
-  <p align="center">Ultima Atualização na v5.2.0</p>
+  <p align="center">Ultima Atualização na v5.3.0</p>
   <h1 align="center">ImagemBase64</h1>
   <h4 align="center">
     Trabalha com imagens usando Base64
   </h4>
   <p align="center">
-    <img src="https://badgen.net/badge/version/v5.2.0/orange">
+    <img src="https://badgen.net/badge/version/v5.3.0/orange">
     <a href="https://codeclimate.com/github/digitalbocca/ImagemBase64/maintainability">
       <img src="https://api.codeclimate.com/v1/badges/36b4c597ca9797fe54ab/maintainability">
     </a>
@@ -30,7 +30,7 @@
       <img src="https://forthebadge.com/images/badges/built-by-developers.svg">
     </a>
   </p>
-  <p align="center">(c)2020 - Estúdio Digital Bocca</p>
+  <p align="center">(c)2016-2021 - Estúdio Digital Bocca</p>
 </p>
 
 ---

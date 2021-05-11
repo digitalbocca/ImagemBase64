@@ -1,17 +1,20 @@
 {
   "name": "imagembase64",
-  "version": "5.2.0",
+  "version": "5.3.0",
   "description": "Entrega uma imagem em base64.",
-  "main": "index.html",
   "config": {
-    "commitMessage": "Atualização de dependências"
+    "commitMessage": "Atualizado para Parcel 2"
   },
-  "parcelCleanPaths": [
-    "docs"
-  ],
   "scripts": {
-    "dev": "parcel ./src/index.pug -p 8080 --no-cache -d ./docs",
-    "build": "parcel build ./src/index.pug --public-url ./ -d ./docs --no-source-maps --no-cache",
+    "clean-cache": "rm -rf ./.parcel-cache",
+    "clean-dist": "rm -rf ./docs",
+    "predev": "npm run clean-cache && npm run clean-dist",
+    "dev": "parcel src/index.pug --dist-dir ./docs -p 8080 --no-cache",
+    "prebuild": "npm run predev",
+    "build": "parcel build src/index.pug --reporter @parcel/reporter-bundle-analyzer --dist-dir ./docs --public-url ./ --no-source-maps --no-cache ",
+    "rename-report": "mv ./parcel-bundle-reports/default.html ./parcel-bundle-reports/index.html",
+    "shrep": "http-server ./parcel-bundle-reports -o -c-1 -p 9090",
+    "postbuild": "npm run rename-report && npm run shrep",
     "web": "http-server ./docs",
     "git": "npm run gst && npm run gad && npm run gco && npm run gta && npm run gpo && npm run gpb && npm run gpg",
     "gst": "git status",
@@ -38,22 +41,23 @@
   },
   "homepage": "https://github.com/digitalbocca/ImagemBase64#readme",
   "devDependencies": {
-    "@babel/core": "^7.12.3",
-    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/plugin-transform-runtime": "^7.13.15",
+    "@fullhuman/postcss-purgecss": "^4.0.3",
+    "@parcel/reporter-bundle-analyzer": "^2.0.0-beta.2",
+    "@parcel/transformer-pug": "^2.0.0-beta.2",
+    "@parcel/transformer-sass": "^2.0.0-beta.2",
     "cross-var-no-babel": "^1.2.0",
-    "cssnano-preset-advanced": "^4.0.7",
     "http-server": "^0.12.3",
-    "parcel-bundler": "^1.12.4",
-    "parcel-plugin-clean-easy": "^1.0.2",
-    "parcel-plugin-purgecss": "^3.0.0",
-    "pug": "^3.0.0",
-    "sass": "^1.29.0",
-    "standard": "^16.0.2"
+    "parcel": "^2.0.0-beta.2",
+    "postcss": "^8.2.15",
+    "postcss-custom-properties": "^11.0.0",
+    "postcss-import": "^14.0.2",
+    "postcss-url": "^10.1.3",
+    "standard": "^16.0.3"
   },
   "dependencies": {
-    "axios": "^0.21.0",
-    "bootstrap": "^4.5.3",
-    "jquery": "^3.5.1",
-    "popper.js": "^1.16.1"
+    "@popperjs/core": "^2.9.2",
+    "axios": "^0.21.1",
+    "bootstrap": "^5.0.0"
   }
 }

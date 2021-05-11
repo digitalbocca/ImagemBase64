@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2019-2020 Estúdio Digital Bocca
+Copyright (c) 2016-2021 Estúdio Digital Bocca
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
