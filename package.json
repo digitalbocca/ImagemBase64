@@ -47,7 +47,7 @@
     "@parcel/transformer-pug": "^2.0.0-beta.2",
     "@parcel/transformer-sass": "^2.0.0-beta.2",
     "cross-var-no-babel": "^1.2.0",
-    "http-server": "^0.12.3",
+    "http-server": "^14.1.1",
     "parcel": "^2.8.2",
     "postcss": "^8.2.15",
     "postcss-custom-properties": "^11.0.0",
