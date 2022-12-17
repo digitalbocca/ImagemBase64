@@ -292,7 +292,7 @@ function(){window.console.error("FoamTree is not supported on this browser.")};w
 
               </script>
               <script id="bundle-data" type="application/json">
-                {"groups":[{"label":"index.html","weight":2566,"groups":[{"label":"src/index.pug","weight":2429}]},{"label":"index.f61bf883.css","weight":3888,"groups":[{"label":"src/sass/edb.sass","weight":6304}]},{"label":"index.fac4696d.js","weight":15615,"groups":[{"label":"node_modules","weight":47660,"groups":[{"label":"axios","weight":42242,"groups":[{"label":"lib","weight":42202,"groups":[{"label":"utils.js","weight":8947},{"label":"adapters/xhr.js","weight":5869},{"label":"core","weight":12353,"groups":[{"label":"mergeConfig.js","weight":2895},{"label":"Axios.js","weight":2648},{"label":"dispatchRequest.js","weight":1934},{"label":"InterceptorManager.js","weight":1251},{"label":"enhanceError.js","weight":1049},{"label":"settle.js","weight":706},{"label":"buildFullPath.js","weight":695},{"label":"createError.js","weight":625},{"label":"transformData.js","weight":550}]},{"label":"defaults.js","weight":2563},{"label":"helpers","weight":9240,"groups":[{"label":"isURLSameOrigin.js","weight":2305},{"label":"buildURL.js","weight":1644},{"label":"cookies.js","weight":1435},{"label":"parseHeaders.js","weight":1393},{"label":"spread.js","weight":564},{"label":"isAbsoluteURL.js","weight":563},{"label":"combineURLs.js","weight":380},{"label":"normalizeHeaderName.js","weight":357},{"label":"isAxiosError.js","weight":343},{"label":"bind.js","weight":256}]},{"label":"axios.js","weight":1503},{"label":"cancel","weight":1727,"groups":[{"label":"CancelToken.js","weight":1240},{"label":"Cancel.js","weight":385},{"label":"isCancel.js","weight":102}]}]},{"label":"index.js","weight":40}]},{"label":"process/browser.js","weight":5418}]},{"label":"src/js/index.js","weight":923}]}]}
+                {"groups":[{"label":"docs/index.html","weight":2614,"groups":[{"label":"src/index.pug","weight":2315}]},{"label":"docs/index.11c0ad14.css","weight":3632,"groups":[{"label":"src/sass/edb.sass","weight":4411}]},{"label":"docs/index.430a57d9.js","weight":20837,"groups":[{"label":"node_modules","weight":65595,"groups":[{"label":"axios","weight":58171,"groups":[{"label":"lib","weight":56053,"groups":[{"label":"utils.js","weight":10202},{"label":"adapters/xhr.js","weight":6650},{"label":"core","weight":16778,"groups":[{"label":"Axios.js","weight":5113},{"label":"mergeConfig.js","weight":3773},{"label":"dispatchRequest.js","weight":2353},{"label":"InterceptorManager.js","weight":1542},{"label":"enhanceError.js","weight":1155},{"label":"transformData.js","weight":746},{"label":"buildFullPath.js","weight":734},{"label":"settle.js","weight":697},{"label":"createError.js","weight":665}]},{"label":"defaults.js","weight":4626},{"label":"helpers","weight":13279,"groups":[{"label":"validator.js","weight":3221},{"label":"isURLSameOrigin.js","weight":2309},{"label":"buildURL.js","weight":1955},{"label":"parseHeaders.js","weight":1681},{"label":"cookies.js","weight":1504},{"label":"spread.js","weight":582},{"label":"isAbsoluteURL.js","weight":581},{"label":"normalizeHeaderName.js","weight":445},{"label":"combineURLs.js","weight":384},{"label":"isAxiosError.js","weight":351},{"label":"bind.js","weight":266}]},{"label":"axios.js","weight":2500},{"label":"cancel","weight":2018,"groups":[{"label":"CancelToken.js","weight":1420},{"label":"Cancel.js","weight":484},{"label":"isCancel.js","weight":114}]}]},{"label":"package.json","weight":2003},{"label":"index.js","weight":115}]},{"label":"process/browser.js","weight":7424}]},{"label":"src/js/index.js","weight":1021}]}]}
               </script>
             </head>
             <body>
@@ -352,7 +352,7 @@ let foamtree = new CarrotSearchFoamTree({
         <dl>
           <div>
             <dt>Size</dt>
-            <dd>${e.group.weight} bytes</dd>
+            <dd>${formatSize(e.group.weight)}</dd>
           </div>
         </dl>
       </div>
@@ -398,6 +398,15 @@ function debounce(fn, delay) {
 
 function translate3d(x, y, z) {
   return `translate3d(${x}px, ${y}px, ${z}px)`;
+}
+
+const UNITS = ['B', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
+function formatSize(x) {
+  let l = 0, n = parseInt(x, 10) || 0;
+  while(n >= 1000 && ++l){
+      n /= 1000;
+  }
+  return(`${n.toFixed(l > 0 ? 2 : 0)} ${UNITS[l]}`);
 }
 
               </script>
